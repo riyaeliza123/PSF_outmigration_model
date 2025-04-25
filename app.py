@@ -34,7 +34,7 @@ start_date_ts = result_df.iloc[0]['date']
 end_date_ts = result_df.iloc[-1]['date']
 
 # Display the predicted date range
-st.write(f"The predicted date range for salmon counts between {lower_percentile}% and {upper_percentile}% of outmigration in {prediction_year} is between {start_date_ts.strftime('%Y-%m-%d')} and {end_date_ts.strftime('%Y-%m-%d')}.")
+st.write(f" {lower_percentile}% to {upper_percentile}% of outmigration in {prediction_year} is predicted to be between {start_date_ts.strftime('%Y-%m-%d')} and {end_date_ts.strftime('%Y-%m-%d')}.")
 
 # Plot the predictions
 st.subheader("Prediction Plot")
